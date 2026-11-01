@@ -19,6 +19,12 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Java 17 einstellen
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
       - name: Systempakete
         run: |
           sudo apt update
@@ -48,8 +54,6 @@ jobs:
         run: |
           echo "=== Gradle-Fehler ==="
           grep -n -A 25 "What went wrong" buildozer.log | head -n 80 || true
-          echo "=== Zeilen mit FAILED oder error ==="
-          grep -n -E "FAILED|error:|Exception" buildozer.log | tail -n 30 || true
           echo "=== Zeilen vor Command failed (ohne export) ==="
           grep -v "^export " buildozer.log | grep -B 60 "Command failed" | head -n 100 || true
 
