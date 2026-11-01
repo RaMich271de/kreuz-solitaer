@@ -41,7 +41,16 @@ jobs:
             buildozer-v1-${{ runner.os }}-
 
       - name: APK bauen
-        run: buildozer -v android debug
+        run: buildozer -v android debug > buildozer.log 2>&1
+
+      - name: Fehlerstelle anzeigen
+        if: failure()
+        run: |
+          if grep -q "Command failed" buildozer.log; then
+            grep -n -B 40 -A 2 "Command failed" buildozer.log
+          else
+            tail -n 150 buildozer.log
+          fi
 
       - name: APK als Artifact hochladen
         uses: actions/upload-artifact@v4
