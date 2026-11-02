@@ -14,10 +14,10 @@ Ziel: Durch Überspringen alle Steine bis auf einen entfernen. Perfekt ist es, w
 
 ## Installation (Android)
 
-1. Auf GitHub unter **Actions** den neuesten grünen Lauf öffnen.
-2. Unten bei **Artifacts** `kreuz-solitaer-apk` herunterladen und die ZIP-Datei entpacken.
-   Oder, unter Releases die neueste APK herunterladen, aufs Handy kopieren und installieren („Unbekannte Quellen“ erlauben)
-3. Die APK aufs Handy kopieren und installieren. Dazu in den Android-Einstellungen „Unbekannte Quellen“ erlauben.
+1. Unter **Releases** (rechts auf der Startseite) die neueste `kreuzsolitaer.apk` herunterladen.
+2. Die Datei auf dem Handy öffnen und installieren. Dazu in den Android-Einstellungen „Unbekannte Quellen“ erlauben.
+
+Alternativ liegt jede Version auch unter **Actions**: neuesten grünen Lauf öffnen, unten bei **Artifacts** `kreuz-solitaer-apk` herunterladen und die ZIP-Datei entpacken.
 
 Es handelt sich um eine Debug-APK für den privaten Gebrauch.
 
