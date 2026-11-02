@@ -1,5 +1,6 @@
 # Kreuz-Solitär
 
+![Kreuz-Solitär](screenshots/Kreuz-Solitär.png)
 Das klassische Solitär-Brettspiel mit 33 Feldern in Kreuzform als Android-App (und am PC), gebaut mit Kivy.
 
 Ziel: Durch Überspringen alle Steine bis auf einen entfernen. Perfekt ist es, wenn der letzte Stein in der Mitte liegt.
